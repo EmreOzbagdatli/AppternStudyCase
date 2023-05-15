@@ -18,7 +18,13 @@
 		1E23B6832A1072740045E152 /* LikedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E23B6822A1072740045E152 /* LikedTableViewCell.swift */; };
 		1E2DE5B52A1196B900232231 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5B42A1196B900232231 /* AlbumDetailViewController.swift */; };
 		1E2DE5B82A119E1200232231 /* AlbumDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5B72A119E1200232231 /* AlbumDetailTableViewCell.swift */; };
-		1E2DE5BD2A11DB3C00232231 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5BC2A11DB3C00232231 /* Model.swift */; };
+		1E2DE5BD2A11DB3C00232231 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5BC2A11DB3C00232231 /* Genre.swift */; };
+		1E2DE5C32A125D6400232231 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DE5C22A125D6400232231 /* Kingfisher */; };
+		1E2DE5C52A125F0C00232231 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5C42A125F0C00232231 /* APICaller.swift */; };
+		1E2DE5C82A12607300232231 /* CategoryPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5C72A12607300232231 /* CategoryPageViewModel.swift */; };
+		1E2DE5CC2A1265EC00232231 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5CB2A1265EC00232231 /* Artist.swift */; };
+		1E2DE5CE2A126B4000232231 /* ArtistAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5CD2A126B4000232231 /* ArtistAlbums.swift */; };
+		1E2DE5D02A126D0A00232231 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5CF2A126D0A00232231 /* Utils.swift */; };
 		1E6C123C2A0EB91B00261291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C123B2A0EB91B00261291 /* AppDelegate.swift */; };
 		1E6C123E2A0EB91B00261291 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */; };
 		1E6C12432A0EB91B00261291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C12412A0EB91B00261291 /* Main.storyboard */; };
@@ -38,7 +44,12 @@
 		1E23B6822A1072740045E152 /* LikedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedTableViewCell.swift; sourceTree = "<group>"; };
 		1E2DE5B42A1196B900232231 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		1E2DE5B72A119E1200232231 /* AlbumDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailTableViewCell.swift; sourceTree = "<group>"; };
-		1E2DE5BC2A11DB3C00232231 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1E2DE5BC2A11DB3C00232231 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		1E2DE5C42A125F0C00232231 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		1E2DE5C72A12607300232231 /* CategoryPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageViewModel.swift; sourceTree = "<group>"; };
+		1E2DE5CB2A1265EC00232231 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		1E2DE5CD2A126B4000232231 /* ArtistAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbums.swift; sourceTree = "<group>"; };
+		1E2DE5CF2A126D0A00232231 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1E6C12382A0EB91B00261291 /* AppcentStudyCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppcentStudyCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6C123B2A0EB91B00261291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2DE5C32A125D6400232231 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +83,8 @@
 		1E2DE5B12A1193B100232231 /* CategoryPage */ = {
 			isa = PBXGroup;
 			children = (
-				1E23B6722A1061F80045E152 /* CategoryPageViewController.swift */,
-				1E23B6742A1062AE0045E152 /* CategoryCollectionViewCell.swift */,
+				1E2DE5C62A12605C00232231 /* ViewModel */,
+				1E2DE5BE2A125A9100232231 /* View */,
 			);
 			path = CategoryPage;
 			sourceTree = "<group>";
@@ -80,8 +92,7 @@
 		1E2DE5B22A11944D00232231 /* ArtistListPage */ = {
 			isa = PBXGroup;
 			children = (
-				1E23B6782A106A970045E152 /* ArtistListViewController.swift */,
-				1E23B6762A106A7F0045E152 /* ArtistListCollectionViewCell.swift */,
+				1E2DE5C92A1265BC00232231 /* View */,
 			);
 			path = ArtistListPage;
 			sourceTree = "<group>";
@@ -104,14 +115,15 @@
 			path = AlbumDetailPage;
 			sourceTree = "<group>";
 		};
-		1E2DE5B92A11CEA300232231 /* Views */ = {
+		1E2DE5B92A11CEA300232231 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				1E6C12442A0EB91C00261291 /* Assets.xcassets */,
 				1E6C12462A0EB91C00261291 /* LaunchScreen.storyboard */,
 				1E6C12412A0EB91B00261291 /* Main.storyboard */,
+				1E6C12492A0EB91C00261291 /* Info.plist */,
 			);
-			path = Views;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1E2DE5BA2A11CEBD00232231 /* MainTabBar */ = {
@@ -122,13 +134,65 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
-		1E2DE5BB2A11CF0D00232231 /* Delegates */ = {
+		1E2DE5BB2A11CF0D00232231 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */,
 				1E6C123B2A0EB91B00261291 /* AppDelegate.swift */,
 			);
-			path = Delegates;
+			path = App;
+			sourceTree = "<group>";
+		};
+		1E2DE5BE2A125A9100232231 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E2DE5BF2A125A9C00232231 /* Cell */,
+				1E23B6722A1061F80045E152 /* CategoryPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E2DE5BF2A125A9C00232231 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E23B6742A1062AE0045E152 /* CategoryCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1E2DE5C02A125B9A00232231 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1E6C12552A0FDF0100261291 /* Utilities */,
+				1E6C12562A0FDF1500261291 /* Services */,
+				1E6C12572A0FDF2400261291 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1E2DE5C62A12605C00232231 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E2DE5C72A12607300232231 /* CategoryPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E2DE5C92A1265BC00232231 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E23B6782A106A970045E152 /* ArtistListViewController.swift */,
+				1E2DE5CA2A1265C500232231 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E2DE5CA2A1265C500232231 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E23B6762A106A7F0045E152 /* ArtistListCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1E6C122F2A0EB91B00261291 = {
@@ -150,13 +214,10 @@
 		1E6C123A2A0EB91B00261291 /* AppcentStudyCase */ = {
 			isa = PBXGroup;
 			children = (
-				1E2DE5BB2A11CF0D00232231 /* Delegates */,
-				1E2DE5B92A11CEA300232231 /* Views */,
-				1E6C125C2A0FE06E00261291 /* Controllers */,
-				1E6C12572A0FDF2400261291 /* Models */,
-				1E6C12562A0FDF1500261291 /* Services */,
-				1E6C12552A0FDF0100261291 /* Utilities */,
-				1E6C12492A0EB91C00261291 /* Info.plist */,
+				1E2DE5BB2A11CF0D00232231 /* App */,
+				1E2DE5B92A11CEA300232231 /* Resources */,
+				1E6C125C2A0FE06E00261291 /* Modules */,
+				1E2DE5C02A125B9A00232231 /* Common */,
 			);
 			path = AppcentStudyCase;
 			sourceTree = "<group>";
@@ -165,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				1E23B67C2A106D810045E152 /* others */,
+				1E2DE5CF2A126D0A00232231 /* Utils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -172,6 +234,7 @@
 		1E6C12562A0FDF1500261291 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1E2DE5C42A125F0C00232231 /* APICaller.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -179,12 +242,14 @@
 		1E6C12572A0FDF2400261291 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1E2DE5BC2A11DB3C00232231 /* Model.swift */,
+				1E2DE5BC2A11DB3C00232231 /* Genre.swift */,
+				1E2DE5CB2A1265EC00232231 /* Artist.swift */,
+				1E2DE5CD2A126B4000232231 /* ArtistAlbums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1E6C125C2A0FE06E00261291 /* Controllers */ = {
+		1E6C125C2A0FE06E00261291 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				1E2DE5BA2A11CEBD00232231 /* MainTabBar */,
@@ -193,7 +258,7 @@
 				1E2DE5B22A11944D00232231 /* ArtistListPage */,
 				1E2DE5B12A1193B100232231 /* CategoryPage */,
 			);
-			path = Controllers;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +277,9 @@
 			dependencies = (
 			);
 			name = AppcentStudyCase;
+			packageProductDependencies = (
+				1E2DE5C22A125D6400232231 /* Kingfisher */,
+			);
 			productName = AppcentStudyCase;
 			productReference = 1E6C12382A0EB91B00261291 /* AppcentStudyCase.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +308,9 @@
 				Base,
 			);
 			mainGroup = 1E6C122F2A0EB91B00261291;
+			packageReferences = (
+				1E2DE5C12A125D6400232231 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1E6C12392A0EB91B00261291 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,12 +345,17 @@
 				1E23B6832A1072740045E152 /* LikedTableViewCell.swift in Sources */,
 				1E6C123C2A0EB91B00261291 /* AppDelegate.swift in Sources */,
 				1E23B6712A1061ED0045E152 /* SecondViewController.swift in Sources */,
-				1E2DE5BD2A11DB3C00232231 /* Model.swift in Sources */,
+				1E2DE5BD2A11DB3C00232231 /* Genre.swift in Sources */,
 				1E6C123E2A0EB91B00261291 /* SceneDelegate.swift in Sources */,
 				1E23B6772A106A7F0045E152 /* ArtistListCollectionViewCell.swift in Sources */,
 				1E23B67F2A1070450045E152 /* ArtistDetailViewController.swift in Sources */,
 				1E2DE5B52A1196B900232231 /* AlbumDetailViewController.swift in Sources */,
 				1E23B6732A1061F80045E152 /* CategoryPageViewController.swift in Sources */,
+				1E2DE5C82A12607300232231 /* CategoryPageViewModel.swift in Sources */,
+				1E2DE5CE2A126B4000232231 /* ArtistAlbums.swift in Sources */,
+				1E2DE5CC2A1265EC00232231 /* Artist.swift in Sources */,
+				1E2DE5C52A125F0C00232231 /* APICaller.swift in Sources */,
+				1E2DE5D02A126D0A00232231 /* Utils.swift in Sources */,
 				1E23B6812A1070BE0045E152 /* ArtistDetailViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KSGZPL6D9M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppcentStudyCase/Info.plist;
+				INFOPLIST_FILE = AppcentStudyCase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -457,7 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KSGZPL6D9M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppcentStudyCase/Info.plist;
+				INFOPLIST_FILE = AppcentStudyCase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -498,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E2DE5C12A125D6400232231 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E2DE5C22A125D6400232231 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E2DE5C12A125D6400232231 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E6C12302A0EB91B00261291 /* Project object */;
 }
