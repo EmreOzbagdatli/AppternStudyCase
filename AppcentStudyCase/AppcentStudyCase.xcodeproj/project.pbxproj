@@ -18,13 +18,12 @@
 		1E23B6832A1072740045E152 /* LikedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E23B6822A1072740045E152 /* LikedTableViewCell.swift */; };
 		1E2DE5B52A1196B900232231 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5B42A1196B900232231 /* AlbumDetailViewController.swift */; };
 		1E2DE5B82A119E1200232231 /* AlbumDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5B72A119E1200232231 /* AlbumDetailTableViewCell.swift */; };
+		1E2DE5BD2A11DB3C00232231 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE5BC2A11DB3C00232231 /* Model.swift */; };
 		1E6C123C2A0EB91B00261291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C123B2A0EB91B00261291 /* AppDelegate.swift */; };
 		1E6C123E2A0EB91B00261291 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */; };
 		1E6C12432A0EB91B00261291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C12412A0EB91B00261291 /* Main.storyboard */; };
 		1E6C12452A0EB91C00261291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C12442A0EB91C00261291 /* Assets.xcassets */; };
 		1E6C12482A0EB91C00261291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C12462A0EB91C00261291 /* LaunchScreen.storyboard */; };
-		1E6C125F2A0FE2AA00261291 /* CategoriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C125E2A0FE2AA00261291 /* CategoriesManager.swift */; };
-		1E6C12612A0FE6EA00261291 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C12602A0FE6EA00261291 /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +38,7 @@
 		1E23B6822A1072740045E152 /* LikedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedTableViewCell.swift; sourceTree = "<group>"; };
 		1E2DE5B42A1196B900232231 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		1E2DE5B72A119E1200232231 /* AlbumDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailTableViewCell.swift; sourceTree = "<group>"; };
+		1E2DE5BC2A11DB3C00232231 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1E6C12382A0EB91B00261291 /* AppcentStudyCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppcentStudyCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6C123B2A0EB91B00261291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +46,6 @@
 		1E6C12442A0EB91C00261291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6C12472A0EB91C00261291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6C12492A0EB91C00261291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E6C125E2A0FE2AA00261291 /* CategoriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesManager.swift; sourceTree = "<group>"; };
-		1E6C12602A0FE6EA00261291 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,20 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E23B67A2A106D5C0045E152 /* SecondPage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SecondPage;
-			sourceTree = "<group>";
-		};
-		1E23B67B2A106D6C0045E152 /* First */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = First;
-			sourceTree = "<group>";
-		};
 		1E23B67C2A106D810045E152 /* others */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,13 +66,6 @@
 				1E23B6822A1072740045E152 /* LikedTableViewCell.swift */,
 			);
 			path = others;
-			sourceTree = "<group>";
-		};
-		1E23B67D2A10702F0045E152 /* FourthVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FourthVC;
 			sourceTree = "<group>";
 		};
 		1E2DE5B12A1193B100232231 /* CategoryPage */ = {
@@ -127,6 +104,33 @@
 			path = AlbumDetailPage;
 			sourceTree = "<group>";
 		};
+		1E2DE5B92A11CEA300232231 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E6C12442A0EB91C00261291 /* Assets.xcassets */,
+				1E6C12462A0EB91C00261291 /* LaunchScreen.storyboard */,
+				1E6C12412A0EB91B00261291 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E2DE5BA2A11CEBD00232231 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1E23B66C2A1061B80045E152 /* ViewController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		1E2DE5BB2A11CF0D00232231 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */,
+				1E6C123B2A0EB91B00261291 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		1E6C122F2A0EB91B00261291 = {
 			isa = PBXGroup;
 			children = (
@@ -146,13 +150,12 @@
 		1E6C123A2A0EB91B00261291 /* AppcentStudyCase */ = {
 			isa = PBXGroup;
 			children = (
+				1E2DE5BB2A11CF0D00232231 /* Delegates */,
+				1E2DE5B92A11CEA300232231 /* Views */,
 				1E6C125C2A0FE06E00261291 /* Controllers */,
 				1E6C12572A0FDF2400261291 /* Models */,
 				1E6C12562A0FDF1500261291 /* Services */,
 				1E6C12552A0FDF0100261291 /* Utilities */,
-				1E6C123B2A0EB91B00261291 /* AppDelegate.swift */,
-				1E6C123D2A0EB91B00261291 /* SceneDelegate.swift */,
-				1E6C12442A0EB91C00261291 /* Assets.xcassets */,
 				1E6C12492A0EB91C00261291 /* Info.plist */,
 			);
 			path = AppcentStudyCase;
@@ -161,10 +164,7 @@
 		1E6C12552A0FDF0100261291 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				1E23B67D2A10702F0045E152 /* FourthVC */,
 				1E23B67C2A106D810045E152 /* others */,
-				1E23B67B2A106D6C0045E152 /* First */,
-				1E23B67A2A106D5C0045E152 /* SecondPage */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -172,7 +172,6 @@
 		1E6C12562A0FDF1500261291 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1E23B66C2A1061B80045E152 /* ViewController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,10 +179,7 @@
 		1E6C12572A0FDF2400261291 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1E6C12412A0EB91B00261291 /* Main.storyboard */,
-				1E6C12462A0EB91C00261291 /* LaunchScreen.storyboard */,
-				1E6C125E2A0FE2AA00261291 /* CategoriesManager.swift */,
-				1E6C12602A0FE6EA00261291 /* CategoryModel.swift */,
+				1E2DE5BC2A11DB3C00232231 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +187,7 @@
 		1E6C125C2A0FE06E00261291 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1E2DE5BA2A11CEBD00232231 /* MainTabBar */,
 				1E2DE5B62A1196C100232231 /* AlbumDetailPage */,
 				1E2DE5B32A11953500232231 /* ArtistDetailPage */,
 				1E2DE5B22A11944D00232231 /* ArtistListPage */,
@@ -276,10 +273,9 @@
 				1E23B6792A106A970045E152 /* ArtistListViewController.swift in Sources */,
 				1E23B6832A1072740045E152 /* LikedTableViewCell.swift in Sources */,
 				1E6C123C2A0EB91B00261291 /* AppDelegate.swift in Sources */,
-				1E6C12612A0FE6EA00261291 /* CategoryModel.swift in Sources */,
 				1E23B6712A1061ED0045E152 /* SecondViewController.swift in Sources */,
+				1E2DE5BD2A11DB3C00232231 /* Model.swift in Sources */,
 				1E6C123E2A0EB91B00261291 /* SceneDelegate.swift in Sources */,
-				1E6C125F2A0FE2AA00261291 /* CategoriesManager.swift in Sources */,
 				1E23B6772A106A7F0045E152 /* ArtistListCollectionViewCell.swift in Sources */,
 				1E23B67F2A1070450045E152 /* ArtistDetailViewController.swift in Sources */,
 				1E2DE5B52A1196B900232231 /* AlbumDetailViewController.swift in Sources */,

@@ -28,6 +28,23 @@ class CategoryPageViewController: UIViewController {
 
         view.backgroundColor = .systemBackground
         // Do any additional setup after loading the view.
+        
+
+
+        Model().getGenreInfo { (genres, error) in
+            if let error = error {
+                print("An error occurred: \(error.localizedDescription)")
+            } else if let genres = genres {
+                for genre in genres {
+                    let name = genre.name
+                    let picture = genre.picture
+                    // burada picture ve name özelliklerini kullanabilirsiniz
+                }
+                // tüm genre'lerin picture ve name özelliklerini kullanarak bir liste oluşturabilirsiniz
+            }
+        }
+
+
     }
     
 
@@ -47,7 +64,7 @@ extension CategoryPageViewController: UICollectionViewDelegate , UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoryCollectionViewCell
         cell.imageView.image = UIImage(named: pics[indexPath.row])
         cell.backgroundColor = .systemBlue
-        cell.imageLbl.text = titles[indexPath.row]
+        cell.categoryName.text = titles[indexPath.row]
         return cell
         
     }

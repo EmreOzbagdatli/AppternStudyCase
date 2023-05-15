@@ -11,6 +11,6 @@ class ArtistListCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var artistListLbl: UILabel!
     
-    @IBOutlet weak var imageViewx: UIImageView!
+    @IBOutlet weak var artistListImageView: UIImageView!
     
 }
