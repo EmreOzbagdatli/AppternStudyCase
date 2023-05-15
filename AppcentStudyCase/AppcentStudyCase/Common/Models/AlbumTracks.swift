@@ -28,6 +28,7 @@ struct AlbumTrack: Codable {
     let md5_image: String?
     let artist: AlbumTrackArtist?
     let type: String?
+    var cover_xl: String?
 }
 
 // MARK: - TrackArtist

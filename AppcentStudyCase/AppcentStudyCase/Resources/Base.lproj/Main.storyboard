@@ -479,11 +479,11 @@
             </objects>
             <point key="canvasLocation" x="2638.9312977099235" y="309.85915492957747"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Kategoriler-->
         <scene sceneID="HEI-r8-N5t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EJh-Ix-jY7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="music.note.list" catalog="system" selectedImage="music.note.list" id="dve-b2-Gf8"/>
+                    <tabBarItem key="tabBarItem" title="Kategoriler" image="music.note.list" catalog="system" selectedImage="music.note.list" id="dve-b2-Gf8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yi4-0r-Htr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

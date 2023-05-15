@@ -68,6 +68,9 @@ extension ArtistListViewController: UICollectionViewDelegate , UICollectionViewD
        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
            let artist = artistList[indexPath.row]
            performSegue(withIdentifier: "toArtistDetailVC", sender: artist)
+           self.navigationItem.title = artistList[indexPath.row].name
+
+           
        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

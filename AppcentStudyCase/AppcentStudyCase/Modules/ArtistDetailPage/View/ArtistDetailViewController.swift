@@ -88,6 +88,9 @@ class ArtistDetailViewController: UIViewController {
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 let album = artistAlbums[indexPath.row]
                 performSegue(withIdentifier: "toAlbumDetailPage", sender: album)
+            
+
+
             }
 
             override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

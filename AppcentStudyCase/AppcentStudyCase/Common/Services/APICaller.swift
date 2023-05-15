@@ -11,7 +11,7 @@ enum APIError: Error{
 class APICaller{
     static let shared = APICaller()
     
-    //MARK: Get Query
+    
     func getGenres(completion: @escaping (Result<Genres, Error>) -> Void){
 
         guard let url = URL(string: "\(Constants.baseURL)/genre") else {return}
@@ -24,7 +24,7 @@ class APICaller{
                 let results = try JSONDecoder().decode(Genres.self, from: data)
                 completion(.success(results))
             }catch{
-                print(String(describing: error)) // <- ✅ Use this for debuging!
+                print(String(describing: error))
                 completion(.failure(APIError.failedToGetData))
             }
 
@@ -45,7 +45,7 @@ class APICaller{
                 let results = try JSONDecoder().decode(Album.self, from: data)
                 completion(.success(results))
             }catch{
-                print(String(describing: error)) // <- ✅ Use this for debuging!
+                print(String(describing: error))
                 completion(.failure(APIError.failedToGetData))
             }
 
@@ -66,7 +66,7 @@ class APICaller{
                 let results = try JSONDecoder().decode(AlbumTracks.self, from: data)
                 completion(.success(results.data ?? [AlbumTrack]()))
             }catch{
-                print(String(describing: error)) // <- ✅ Use this for debuging!
+                print(String(describing: error))
                 completion(.failure(APIError.failedToGetData))
             }
 
@@ -87,7 +87,7 @@ class APICaller{
                 let results = try JSONDecoder().decode(Artist.self, from: data)
                 completion(.success(results))
             }catch{
-                print(String(describing: error)) // <- ✅ Use this for debuging!
+                print(String(describing: error))
                 completion(.failure(APIError.failedToGetData))
             }
 
@@ -108,7 +108,7 @@ class APICaller{
                 let results = try JSONDecoder().decode(GenreArtists.self, from: data)
                 completion(.success(results))
             }catch{
-                print(String(describing: error)) // <- ✅ Use this for debuging!
+                print(String(describing: error))
                 completion(.failure(APIError.failedToGetData))
             }
 
@@ -130,7 +130,7 @@ class APICaller{
                 let results = try JSONDecoder().decode(ArtistAlbums.self, from: data)
                 completion(.success(results))
             }catch{
-                print(String(describing: error)) // <- ✅ Use this for debuging!
+                print(String(describing: error))
                 completion(.failure(APIError.failedToGetData))
             }
 

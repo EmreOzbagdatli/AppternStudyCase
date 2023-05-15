@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Artist
 struct Artist: Codable {
     let id: Int?
     let link, name, share, picture: String?
@@ -18,12 +17,10 @@ struct Artist: Codable {
     let type: String?
 }
 
-// MARK: - GenreArtist
 struct GenreArtists: Codable {
     let data: [GenreArtist]?
 }
 
-// MARK: - GenreArtist
 struct GenreArtist: Codable {
     let id: Int?
     let picture, name: String?

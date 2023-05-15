@@ -7,11 +7,11 @@
 
 import Foundation
 
-// MARK: - Genres
+
 struct Genres: Codable {
     let data: [Genre]?
 }
-// MARK: Genre
+
 struct Genre: Codable {
     let id: Int?
     let picture, name: String?

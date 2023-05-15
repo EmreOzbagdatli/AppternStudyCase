@@ -120,6 +120,7 @@ class AlbumDetailViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let track = trackList[indexPath.row]
+
             if let url = URL(string: track.preview ?? "") {
                 if isPlaying {
                     audioPlayer.stop()
