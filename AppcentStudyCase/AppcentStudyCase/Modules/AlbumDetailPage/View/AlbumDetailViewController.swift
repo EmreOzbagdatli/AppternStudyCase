@@ -37,11 +37,12 @@ class AlbumDetailViewController: UIViewController {
                return
            }
 
-           let track = trackList[indexPath.row]
+           var track = trackList[indexPath.row]
            if FavoritesManager.shared.isFavorite(track) {
                FavoritesManager.shared.removeFavorite(track)
                button.setImage(UIImage(systemName: "heart"), for: .normal)
            } else {
+               track.cover_xl = self.albumPhotoURL
                FavoritesManager.shared.addFavorite(track)
                button.setImage(UIImage(systemName: "heart.fill"), for: .normal)
            }
@@ -120,7 +121,6 @@ class AlbumDetailViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let track = trackList[indexPath.row]
-
             if let url = URL(string: track.preview ?? "") {
                 if isPlaying {
                     audioPlayer.stop()

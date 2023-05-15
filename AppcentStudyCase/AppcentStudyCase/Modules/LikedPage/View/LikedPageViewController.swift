@@ -22,6 +22,7 @@ class LikedPageViewController: UIViewController {
         likedTableView.dataSource = self
         likedTableView.delegate = self
 
+        // Get saved favorite tracks from FavoritesManager
 
 
     }
