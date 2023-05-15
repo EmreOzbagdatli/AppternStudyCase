@@ -74,6 +74,7 @@ extension ArtistListViewController: UICollectionViewDelegate , UICollectionViewD
         if segue.identifier == "toArtistDetailVC", let artistDetailVC = segue.destination as? ArtistDetailViewController, let artist = sender as? GenreArtist {
             artistDetailVC.artistID = artist.id
             artistDetailVC.artistName = artist.name
+            artistDetailVC.artistPictureURL = URL(string: artist.picture_xl ?? "")
         }
     }
 

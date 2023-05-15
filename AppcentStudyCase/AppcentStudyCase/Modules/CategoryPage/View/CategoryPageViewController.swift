@@ -72,6 +72,7 @@ extension CategoryPageViewController: UICollectionViewDelegate , UICollectionVie
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let choosenGenre = genres[indexPath.row]
         performSegue(withIdentifier: "toSecondPage", sender: choosenGenre)
+        self.navigationItem.title = choosenGenre.name
     }
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,6 +81,7 @@ extension CategoryPageViewController: UICollectionViewDelegate , UICollectionVie
                let choosenGenre = sender as? Genre {
                 artistVC.genreID = choosenGenre.id!
                 artistVC.genreName = choosenGenre.name!
+                
             }
         }
     }

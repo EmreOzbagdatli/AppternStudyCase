@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ArtistDetailViewController: UIViewController {
     
@@ -18,7 +19,8 @@ class ArtistDetailViewController: UIViewController {
     var artistID: Int!
     var artistName: String!
     var artistAlbums = [ArtistAlbum]()
-    
+    var artistPictureURL: URL!
+
     
    
     
@@ -31,6 +33,10 @@ class ArtistDetailViewController: UIViewController {
         
         artistDetailImageView.image = UIImage(named: "pic5")
         getArtistAlbums()
+        
+        if let url = artistPictureURL {
+                   artistDetailImageView.kf.setImage(with: url, placeholder: nil, options: [.transition(.fade(0.7))])
+               }
         
     }
     
@@ -78,10 +84,19 @@ class ArtistDetailViewController: UIViewController {
                    return cell
         }
         
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            performSegue(withIdentifier: "toAlbumDetailPage", sender: nil)
-        }
         
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+                let album = artistAlbums[indexPath.row]
+                performSegue(withIdentifier: "toAlbumDetailPage", sender: album)
+            }
+
+            override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "toAlbumDetailPage", let albumDetailVC = segue.destination as? AlbumDetailViewController, let album = sender as? ArtistAlbum {
+                    albumDetailVC.albumID = album.id
+                    albumDetailVC.albumName = album.title
+                    albumDetailVC.albumPhotoURL = album.cover_xl
+                }
+            }
     }
     
 

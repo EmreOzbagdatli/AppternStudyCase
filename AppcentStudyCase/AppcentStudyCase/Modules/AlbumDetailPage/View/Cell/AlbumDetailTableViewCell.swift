@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class AlbumDetailTableViewCell: UITableViewCell {
 
 
@@ -19,10 +21,6 @@ class AlbumDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var likedButton: UIButton!
     
     
-    @IBAction func didTouchBtn(_ sender: Any) {
-     
-        
-       
-    }
+  
     
 }
